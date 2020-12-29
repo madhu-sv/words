@@ -1,13 +1,5 @@
 import 'package:http/http.dart' as http;
 
-var options = {
-  "url": 'https://wordsapiv1.p.rapidapi.com/words/null',
-  "headers": {
-    'x-rapidapi-key': 'd6c8cbef9dmshfba8025612f7541p167efcjsn892c16a8cce0',
-    'x-rapidapi-host': 'wordsapiv1.p.rapidapi.com'
-  }
-};
-
 class Schema {
   String word;
   List<Results> results;
