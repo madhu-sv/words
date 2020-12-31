@@ -11,7 +11,7 @@ class ApiProvider {
     var responseJson;
     try {
       var headers = {
-        "x-rapidapi-key": "d6c8cbef9dmshfba8025612f7541p167efcjsn892c16a8cce0",
+        "x-rapidapi-key": Platform.environment["API_KEY"],
         "x-rapidapi-host": "wordsapiv1.p.rapidapi.com",
       };
       final response = await http.get(_baseUrl + url, headers: headers);
