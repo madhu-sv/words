@@ -1,20 +1,18 @@
-import 'package:http/http.dart' as http;
-
-class Schema {
+class WordsResponse {
   String word;
   List<Results> results;
   Syllables syllables;
   Pronunciation pronunciation;
   double frequency;
 
-  Schema(
+  WordsResponse(
       {this.word,
       this.results,
       this.syllables,
       this.pronunciation,
       this.frequency});
 
-  Schema.fromJson(Map<String, dynamic> json) {
+  WordsResponse.fromJson(Map<String, dynamic> json) {
     word = json['word'];
     if (json['results'] != null) {
       results = new List<Results>();
